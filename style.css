@@ -10,7 +10,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;  
+    flex-direction: row;
 }
 
 .logo {
@@ -88,7 +88,6 @@
     margin:3px;
 }
 header {
-    background-color: blue;
     background-color:#132235;
     height: 200px; 
     width:100%;  
@@ -102,7 +101,7 @@ main {
 
 footer {
     background-color: black;
-    height: 150px;    
+    height: 150px;
 }
 
 .azul {
@@ -121,6 +120,82 @@ footer {
 #sessoes {
     flex-direction: column;
 }
+
+
+.faq {
+    margin: 15%;
+}
+
+.faq>h1 {
+    margin-bottom: 5%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.faq>ul>li { 
+    padding: 5%;
+    font-size: x-large;
+}
+
+
+.faq>ul {
+    border: 5px solid black;
+}
+
+
+.home {
+    margin: 10%;
+}
+
+.home>h2 {
+    margin: 5%;
+}
+
+.slider {
+    display: block;
+    max-height: 293px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: white;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    margin: auto;
+    width: 10px;
+    z-index: 10;
+
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
 
 /* Nossos Clientes (Andrei) */
 
@@ -224,10 +299,55 @@ footer {
 }
 .product .meters{
     margin-right:15px;
+
 }
 
+.slider li:nth-child(3) label {
+    left: 70px;
+}
 
+.slider li:nth-child(4) label {
+    left: 100px;
+}
 
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.home>p {
+    position: relative;
+    left: 20%;
+    margin: auto;
+    max-width: 50%;
+
+}
+
+.rodape {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.rodape>div {    
+    margin: 2px 20px;
+    max-height: 150px;
+    max-width: 250px;
+}
+
+.rodape>div>a :hover {
+    background-color: white;
+}
 
 /* @media screen and (max-device-width:620px){
     header {
