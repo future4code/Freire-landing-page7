@@ -71,6 +71,109 @@ footer {
     flex-direction: column;
 }
 
+/* Nossos Clientes (Andrei) */
+
+#clientes{
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.clientes{
+    padding:50px;
+    text-align:center;
+}
+.clientes-logo{
+    margin-top:30px;
+    margin-bottom:100px;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:5px;
+}
+.clientes-logo img{
+    max-width:100%;
+}
+
+/* Hospedagens (Andrei) */
+
+#hospedagens{
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+}
+.hospedagens h1{
+    padding-bottom:50px;
+    padding-top:50px;
+    text-align:center;
+}
+.title{
+    text-align:center;
+}
+.hospedagem-area{
+    display:flex;
+    justify-content:space-between;
+    font-size:35px;
+    margin-bottom:50px;
+}
+.moradia-comp{
+    flex:1;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:Center;
+}
+.kitnet{
+    flex:1;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:Center;
+}
+.product{
+    border:1px solid #ccc;
+    max-width:450px;
+    margin:25px;
+}
+.product img{
+    max-width:100%;
+}
+.product .type-price{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.product .type{
+    font-size:16px;
+    color:#777;
+    margin-left:20px;
+}
+.product .price{
+    font-size:20px;
+    font-weight:bold;
+    margin-right:20px;
+}
+.product .mainAdress{
+    margin-left:20px;
+    margin-bottom:5px;
+    font-size:20px;
+    font-weight:bold;
+}
+.product .adress{
+    margin-left:20px;
+    font-size:18px;
+    color:#777;
+}
+.product .space{
+    display:flex;
+    font-size:18px;
+    margin-left:20px;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+.product .meters{
+    margin-right:15px;
+}
 
 
 
@@ -80,3 +183,9 @@ footer {
       display: none;          
     }        
 } */
+
+@media screen and (max-device-width:800px){
+    .hospedagem-area{
+        flex-direction:column;
+    }
+}
