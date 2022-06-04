@@ -1,13 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.layout {
-    display: flex;
-    flex-direction: column;
-    /* background-color: chocolate; */
-
+    /* font-family: "roboto", sans-serif; */
 }
 
 .container {
@@ -41,30 +35,88 @@
     justify-content: space-around;
     align-items: center;
 }
-
+.menu h3{
+    /* background-color:Red; */
+    margin:10px;
+    text-align:center;
+}
+#menu-mobile{
+    position:fixed;
+    top:200px;
+    color:white;
+    width:100%;
+    height:calc(100vh - 200px);
+    background-color:#132235;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    display:none;
+    z-index: 10;
+}
+#menu-mobile h3{
+    padding:10px;
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+#menu-mobile h3:hover{
+    background-color:#ccc;
+    color:#132235;
+    cursor:pointer;
+}
+.menu-icone{
+    height:50px;
+    width:100%;
+    position:fixed;
+    top:150px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    display:none;
+    z-index: 10;
+}
+.menu-icone:hover{
+    cursor:pointer;
+}
+.menu-bar{
+    width:30px;
+    height:3px;
+    background-color:#ccc;
+    border-radius:10px;
+    margin:3px;
+}
 header {
-    background-color: blue;
-    height: 200px;
+    background-color:#132235;
+    height: 200px; 
+    width:100%;  
+    position:fixed;
+    z-index:10;
 }
 
 main {
-    background-color: aqua;
-    height: 100%;
+    /* background-color: aqua; */
+    height: 100%;   
 }
 
 footer {
-    background-color: black;
+    background-color:#132235;
     height: 150px;
 }
 
 .azul {
     background-color: blue;
-    min-height: 100vh;
 }
 
 .azul-claro {
     background-color: rgb(103, 103, 246);
-    min-height: 100vh;
+}
+.home{
+    padding-top:200px;
+    height:70vh;
 }
 
 #sessoes {
@@ -136,7 +188,7 @@ footer {
     position: absolute;
     margin: auto;
     width: 10px;
-    z-index: 10;
+    z-index: 9;
 
 }
 
@@ -146,7 +198,7 @@ footer {
 
 .slider li:nth-child(2) label {
     left: 40px;
-
+}
 /* Nossos Clientes (Andrei) */
 
 #clientes{
@@ -294,9 +346,15 @@ footer {
     max-height: 150px;
     max-width: 250px;
 }
-
-.rodape>div>a :hover {
-    background-color: white;
+.redes-icone a{
+    text-decoration:none;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+}
+.redes-icone a:hover{
+    background-color:white;
+    color:#132235;
 }
 
 /* @media screen and (max-device-width:620px){
@@ -305,8 +363,14 @@ footer {
     }        
 } */
 
-@media screen and (max-device-width:800px){
+@media screen and (max-device-width:960px){
     .hospedagem-area{
         flex-direction:column;
+    }
+    .menu{
+        display:none;
+    }
+    .menu-icone{
+        display:flex;
     }
 }

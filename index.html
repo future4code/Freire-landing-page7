@@ -8,29 +8,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b1eab5763b.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="menuMobile.js"></script>
 </head>
 
 <body>
-    <div class="layout">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="f4life.png" alt="logo"/>
-                </div>
-                <div class="menu">
-                    <h3>Home</h3>
-                    <h3>Sobre nós</h3>
-                    <h3>Hospedagens</h3>
-                    <h3>Promoções</h3>
-                    <h3>Nossos clientes</h3>
-                    <h3>FAQ</h3>
-                </div>
-        </header>
-    </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="f4life.png" alt="logo"/>
+            </div>
+            <div class="menu">
+               <a href="#home"><h3>Home</h3></a>
+               <a href="#sobre-nos"><h3>Sobre nós</h3></a> 
+               <a href="#hospedagens"><h3>Hospedagens</h3></a>
+               <a href="#promocoes"><h3>Promoções</h3></a> 
+                <a href="#clientes"><h3>Nossos clientes</h3></a>
+               <a href="#faq"><h3>FAQ</h3></a> 
+            </div>
     </header>
+        <div class="menu-icone" onclick="toggleMenu()">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+        <div id="menu-mobile">
+            <a href="#home"><h3>Home</h3></a>
+            <a href="#sobre-nos"><h3>Sobre nós</h3></a>
+            <a href="#hospedagens"><h3>Hospedagens</h3></a>
+            <a href="#promocoes"><h3>Promoções</h3></a> 
+            <a href="#clientes"><h3>Nossos clientes</h3></a>
+            <a href="#faq"><h3>FAQ</h3></a>
+        </div>
     <main>
         <div class="container" id="sessoes">
-            <div class="azul-claro">
+            <div class="azul-claro" id="home">
                 <div class="home">
                     <h1>HOME</h1>
                     <h2>Venha conhecer as melhores hospedagens universitárias!!!
@@ -66,7 +78,7 @@
 
             </div>
 
-            <div class="azul">
+            <div class="azul" id="sobre-nos">
                 <div class="sobre-nos">
                     <h1>SOBRE NÓS</h1>
                 </div>
@@ -228,7 +240,7 @@
 
 
             </div>
-            <div class="azul">
+            <div class="azul" id="promocoes">
                 <div class="promocoes">
                     <h1>PROMOÇÕES</h1>
                 </div>
@@ -259,7 +271,7 @@
                     </div>
 
             </div>
-            <div class="azul">
+            <div class="azul" id="faq">
                 <div class="faq">
                     <h1>Perguntas frequentes</h1>
                     <ul>
@@ -308,10 +320,10 @@
                     CEP - 12345-543 <br>
                     Pinheiros - São Paulo
                 </div>
-                <div>
-                   <a href="https://www.instagram.com" target="_blank"><img src="/instagram-1946323-1646407.webp" height="30px"></a>
-                   <a href="https://www.linkedin.com" target="_blank"><img src="/linkedin-3691226-3073746.webp" height="30px"></a>
-                   <a href="https://www.facebook.com" target="_blank"><img src="/facebook.png" height="30px"></a>
+                <div class="redes-icone">
+                   <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
                 </div>
             </div>
         </div>
