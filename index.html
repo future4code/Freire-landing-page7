@@ -8,26 +8,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b1eab5763b.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="menuMobile.js"></script>
 </head>
 
 <body>
-    <div class="layout">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="f4life.png" alt="logo"/>
-                </div>
-                <div class="menu">
-                    <h3>Home</h3>
-                    <h3>Sobre nós</h3>
-                    <h3>Hospedagens</h3>
-                    <h3>Promoções</h3>
-                    <h3>Nossos clientes</h3>
-                    <h3>FAQ</h3>
-                </div>
-        </header>
-    </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="f4life.png" alt="logo"/>
+            </div>
+            <div class="menu">
+                <h3>Home</h3>
+                <h3>Sobre nós</h3>
+                <h3>Hospedagens</h3>
+                <h3>Promoções</h3>
+                <h3>Nossos clientes</h3>
+                <h3>FAQ</h3>
+            </div>
     </header>
+        <div class="menu-icone" onclick="toggleMenu()">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+        <div id="menu-mobile">
+            <h3>Home</h3>
+            <h3>Sobre nós</h3>
+            <h3>Hospedagens</h3>
+            <h3>Promoções</h3>
+            <h3>Nossos clientes</h3>
+            <h3>FAQ</h3>
+        </div>
     <main>
         <div class="container" id="sessoes">
             <div class="azul-claro">
