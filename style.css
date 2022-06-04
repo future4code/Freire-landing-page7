@@ -356,11 +356,64 @@ footer {
     background-color:white;
     color:#132235;
 }
+.trabalhe-conosco, 
+.trabalhe-conosco, h1 {
+    text-align: center;
+
+}
+
+.formulario-area{
+
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   padding: 50px;
+
+}
+
+fieldset{
+    border:0;
+    justify-content: center;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    float:left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0 0, 0.2);
+}
+
+.campo select option{
+    padding-right: 1em;
+    color:black;
+}
+
+.botao{
+    margin-bottom: 1em;
+    border: 0;
+    padding: 0.2em 0.2em;
+    
+}
+
 
 /* @media screen and (max-device-width:620px){
     header {
       display: none;          
-    }        
+    }
+    
+            
 } */
 
 @media screen and (max-device-width:960px){
@@ -374,3 +427,4 @@ footer {
         display:flex;
     }
 }
+
