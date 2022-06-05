@@ -105,6 +105,7 @@ header {
     width:100%;  
     position:fixed;
     z-index:10;
+    border-bottom:1px solid #ccc;
 }
 
 main {
@@ -114,16 +115,18 @@ main {
 
 footer {
     background-color:#132235;
-    height: 150px;
+    min-height: 150px;
+    margin-top:10px;
 }
 
 .azul {
-    background-color: blue;
+    background-color:#132235;
+    color:white;
 }
 
-.azul-claro {
+/* .azul-claro {
     background-color: rgb(103, 103, 246);
-}
+} */
 .home{
     padding-top:200px;
     height:70vh;
@@ -343,11 +346,11 @@ footer {
 .rodape {
     color: white;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin: 10px;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 .rodape>div {    
@@ -370,14 +373,12 @@ footer {
     text-align: center;
 
 }
-
 .formulario-area{
 
    display: flex;
    flex-direction:column;
    align-items: center;
    padding: 50px;
-
 }
 
 fieldset{
@@ -430,6 +431,9 @@ input, select, textarea, button{
     text-align:left;
 }
 
+.sobre-nos h1{
+    margin-bottom:150px;
+}
 p{
     text-align: justify;
 }
@@ -482,6 +486,27 @@ p{
     }
     .menu-icone{
         display:flex;
+    }
+    .sobre-nos h1{
+        margin-bottom:50px;
+    }
+    .rodape{
+        justify-content: center;
+    }
+    .redes-icone,
+    .endereco{
+        padding-top:20px;
+    }
+    .formulario form{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .formulario-text-area,
+    .formulario-text-area textarea{
+        text-align:center;
+        max-width:100%;
     }
 }
 
