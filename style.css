@@ -425,6 +425,46 @@ input, select, textarea, button{
 }
 
 
+/****sobre nós******/
+.sobre-nos{
+    text-align:left;
+}
+
+p{
+    text-align: justify;
+}
+
+.area-sobre{
+    display: flex;
+    justify-content: center;
+}
+
+.area-sobre p{
+    flex:1;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+
+}
+
+.imagem-sobre{
+    width: 100%;
+    height: 300px;
+    display:flex;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+   
+}
+
+.imagem-sobre>img {
+   
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
 /* @media screen and (max-device-width:620px){
     header {
       display: none;          
