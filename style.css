@@ -35,6 +35,16 @@
     justify-content: space-around;
     align-items: center;
 }
+.menu a,
+#menu-mobile a{
+    text-decoration:none;
+    color:white;
+}
+.menu a:hover{
+    background-color:white;
+    border-radius:10px;
+    color:#132235;
+}
 .menu h3{
     /* background-color:Red; */
     margin:10px;
@@ -54,7 +64,7 @@
     display:none;
     z-index: 10;
 }
-#menu-mobile h3{
+#menu-mobile a{
     padding:10px;
     flex:1;
     display:flex;
@@ -62,7 +72,7 @@
     justify-content:center;
     width:100%;
 }
-#menu-mobile h3:hover{
+#menu-mobile a:hover{
     background-color:#ccc;
     color:#132235;
     cursor:pointer;
@@ -125,7 +135,7 @@ footer {
 
 
 .faq {
-    margin: 15%;
+    /* margin: 15%; */
 }
 
 .faq>h1 {
@@ -231,7 +241,6 @@ footer {
 }
 .hospedagens h1{
     padding-bottom:50px;
-    padding-top:50px;
     text-align:center;
 }
 .title{
@@ -405,6 +414,14 @@ input, select, textarea, button{
     border: 0;
     padding: 0.2em 0.2em;
     
+}
+
+.sobre-nos,
+.hospedagens,
+.trabalhe-conosco,
+.clientes,
+.faq{
+    padding-top:200px;
 }
 
 
