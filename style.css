@@ -509,5 +509,11 @@ p{
         text-align:center;
         max-width:100%;
     }
+    .area-sobre{
+        flex-direction:column;
+    }
+    .area-sobre p{
+        margin-bottom:20px;
+    }
 }
 
