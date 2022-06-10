@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b1eab5763b.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="menuMobile.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="f4life.png" alt="logo" />
+            </div>
+            <div class="menu">
+                <a href="#home">
+                    <h3>Home</h3>
+                </a>
+                <a href="#sobre-nos">
+                    <h3>Sobre nós</h3>
+                </a>
+                <a href="#hospedagens">
+                    <h3>Hospedagens</h3>
+                </a>
+                <a href="#trabalhe-conosco">
+                    <h3>Trabalhe conosco</h3>
+                </a>
+                <a href="#clientes">
+                    <h3>Nossos clientes</h3>
+                </a>
+                <a href="#faq">
+                    <h3>FAQ</h3>
+                </a>
+            </div>
+    </header>
+    <div class="menu-icone" onclick="toggleMenu()">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+    </div>
+    <div id="menu-mobile">
+
+        <a href="#home" onclick="toggleMenu()">
+            <h3>Home</h3>
+        </a>
+        <a href="#sobre-nos" onclick="toggleMenu()">
+            <h3>Sobre nós</h3>
+        </a>
+        <a href="#hospedagens" onclick="toggleMenu()">
+            <h3>Hospedagens</h3>
+        </a>
+        <a href="#trabalhe-conosco" onclick="toggleMenu()">
+            <h3>Trabalhe conosco</h3>
+        </a>
+        <a href="#clientes" onclick="toggleMenu()">
+            <h3>Nossos clientes</h3>
+        </a>
+        <a href="#faq" onclick="toggleMenu()">
+            <h3>FAQ</h3>
+        </a>
+
+    </div>
+    <main>
+        <div class="container" id="sessoes">
+            <div class="azul-claro" id="home">
+                <div class="home">
+                    <h1>HOME</h1>
+                    <h2>Venha conhecer as melhores hospedagens universitárias!!!
+                        <br>
+                        Por um bom preço e perto da sua faculdade.
+                    </h2>
+                    <ul class="slider">
+                        <li>
+                            <input type="radio" id="slide1" name="slide" checked>
+                            <label for="slide1"></label>
+                            <img src="/20180723persiana-para-quarto-37.jpg" alt="">
+                        </li>
+                        <li>
+                            <input type="radio" id="slide2" name="slide">
+                            <label for="slide2"></label>
+                            <img src="/pequeno-apartamento-28-metros-quadrados-05.jpg" alt="">
+                        </li>
+                        <li>
+                            <input type="radio" id="slide3" name="slide">
+                            <label for="slide3"></label>
+                            <img src="/x21-Apartamento-pequeno-integrado.jpg.pagespeed.ic.Qs4noN0ail.webp" alt="">
+                        </li>
+                        <li>
+                            <input type="radio" id="slide4" name="slide">
+                            <label for="slide4"></label>
+                            <img src="/5954_augen_ixpadc.jpg" alt="">
+                        </li>
+
+
+                    </ul>
+                    <p><u>Clique nos botões abaixo para trocar de imagem</u></p>
+                </div>
+
+            </div>
+
+            <div class="azul" id="sobre-nos">
+                <div class="sobre-nos">
+                    <h1>SOBRE NÓS</h1>
+                </div>
+                <div class="area-sobre">
+                <p>
+                A 4FLife iniciou sua história no mercado de imobiliário em 2014, na cidade de Ribeirão Preto - SP.
+                A empresa nasceu com o intuito de otimizar a vida de estudantes universitários. Nossas unidades contam 
+                com uma arquitetura planejada especialmente para oferecer um ambiente prático, e voltado para oferecer
+                o máximo conforto para o estudo.
+                Atualmente, somos uma das maiores plataformas de aluguéis de moradias universitárias, e possuímos parcerias 
+                com os melhores centros universitários mais conceituados do país.
+                Nossas unidades possuem excelente localização, próximas aos principais centros universitários, 
+                hospitais, farmácias e supermercados.
+                </p>
+                <div class="imagem-sobre">
+                    <img src="img-sobre-nos.png">
+                </div> 
+                </div>
+            </div>  
+
+            <div class="azul-claro" id="hospedagens">
+                <div class="hospedagens">
+                    <h1>HOSPEDAGENS</h1>
+                </div>
+                <div class="hospedagem-area">
+                    <div class="moradia-comp">
+                        <div class="title">
+                            Moradia Compartilhada
+                        </div>
+                        <div class="product">
+                            <img src="quartos/quarto1.jpg" />
+                            <div class="info">
+                                <div class="type-price">
+                                    <div class="type">
+                                        Apartamento
+                                    </div>
+                                    <div class="price">
+                                        R$ 3.555
+                                    </div>
+                                </div>
+                                <div class="mainAdress">
+                                    R. Paim
+                                </div>
+                                <div class="adress">
+                                    Bela vista, São Paulo
+                                </div>
+                                <div class="space">
+                                    <div class="meters">
+                                        <i class="fa-solid fa-ruler-horizontal"></i> 40 m²
+                                    </div>
+                                    <div class="bedrooms">
+                                        <i class="fa-solid fa-bed"></i> 1 quarto
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="quartos/quarto2.jpg" />
+                            <div class="info">
+                                <div class="type-price">
+                                    <div class="type">
+                                        Apartamento
+                                    </div>
+                                    <div class="price">
+                                        R$ 2.180
+                                    </div>
+                                </div>
+                                <div class="mainAdress">
+                                    Rua Conde de São Joaquim
+                                </div>
+                                <div class="adress">
+                                    Bela vista, São Paulo
+                                </div>
+                                <div class="space">
+                                    <div class="meters">
+                                        <i class="fa-solid fa-ruler-horizontal"></i> 74 m²
+                                    </div>
+                                    <div class="bedrooms">
+                                        <i class="fa-solid fa-bed"></i> 1 quarto
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="quartos/quarto3.jpg" />
+                            <div class="info">
+                                <div class="type-price">
+                                    <div class="type">
+                                        Apartamento selecionado
+                                    </div>
+                                    <div class="price">
+                                        R$ 2.896
+                                    </div>
+                                </div>
+                                <div class="mainAdress">
+                                    Rua da Consolação
+                                </div>
+                                <div class="adress">
+                                    Consolação, São Paulo
+                                </div>
+                                <div class="space">
+                                    <div class="meters">
+                                        <i class="fa-solid fa-ruler-horizontal"></i> 47 m²
+                                    </div>
+                                    <div class="bedrooms">
+                                        <i class="fa-solid fa-bed"></i> 1 quarto
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kitnet">
+                        <div class="title">
+                            Kitnet
+                        </div>
+                        <div class="product">
+                            <img src="quartos/quarto4.jpg" />
+                            <div class="info">
+                                <div class="type-price">
+                                    <div class="type">
+                                        Studio e kitnet
+                                    </div>
+                                    <div class="price">
+                                        R$ 1.908
+                                    </div>
+                                </div>
+                                <div class="mainAdress">
+                                    Rua Major Sertório
+                                </div>
+                                <div class="adress">
+                                    Vila Buarque, São Paulo
+                                </div>
+                                <div class="space">
+                                    <div class="meters">
+                                        <i class="fa-solid fa-ruler-horizontal"></i> 32 m²
+                                    </div>
+                                    <div class="bedrooms">
+                                        <i class="fa-solid fa-bed"></i> 1 quarto
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="quartos/quarto5.jpg" />
+                            <div class="info">
+                                <div class="type-price">
+                                    <div class="type">
+                                        Studio e kitnet
+                                    </div>
+                                    <div class="price">
+                                        R$ 1.722
+                                    </div>
+                                </div>
+                                <div class="mainAdress">
+                                    Rua Doutor José de Queirós Aranha
+                                </div>
+                                <div class="adress">
+                                    Vila Mariana, São Paulo
+                                </div>
+                                <div class="space">
+                                    <div class="meters">
+                                        <i class="fa-solid fa-ruler-horizontal"></i> 20 m²
+                                    </div>
+                                    <div class="bedrooms">
+                                        <i class="fa-solid fa-bed"></i> 1 quarto
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="azul" id="trabalhe-conosco">
+                <div class="trabalhe-conosco">
+                    <h1>TRABALHE CONOSCO</h1>
+                </div>
+                <div>
+                    <br>
+                    <h1>Faça já o seu cadastro e boa sorte!</h1>
+                    <br>
+                    <div class="formulario-area">
+                        <div class="formulario">
+                            <form>
+                                <fieldset class="nome-pessoa">
+                                    <div class="campo">
+                                        <label for="nome"><strong>Nome</strong></label>
+                                        <br>
+                                        <input type="text" name="nome" id="nome">
+
+
+                                        <div class="campo">
+                                            <label for="sobrenome"><strong>Sobrenome</strong></label>
+                                            <br>
+                                            <input type="text" name="sobrenome" id="sobrenome">
+                                        </div>
+
+                                </fieldset>
+
+                                <div class="campo">
+                                    <label for="email"><strong>Email</strong></label>
+                                    <br>
+                                    <input type="email" name="email" id="email">
+                                </div>
+
+                                <div>
+                                    <label><strong>Selecione sua área de interesse:</strong></label>
+                                    <br>
+                                    <input type="radio" nome="area" value="administrativo" checked>Área Adminitrativa
+                                    </label>
+
+                                    <label>
+                                        <br>
+                                        <input type="radio" nome="area" value="corretor" checked>Corretor de Imóveis
+                                    </label>
+                                    <br>
+                                    <input type="radio" nome="area" value="asg" checked>ASG
+                                    </label>
+                                    <label>
+                                        <br>
+                                        <input type="radio" nome="area" value="outros" checked>Outros
+                                    </label>
+                                </div>
+                                <div>
+                                    <fieldset class="regiao">
+                                        <br>
+                                        <label><strong>Selecione sua região</strong></label>
+                                        <select id="area">
+                                            <br>
+                                            <option selected disabled value="">Selecione</option><br>
+                                            <option>Norte</option>
+                                            <option>Nordeste</option>
+                                            <option>Sudeste</option>
+                                            <option>Sul</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+
+                                <div class="formulario-text-area">
+                                    <br>
+                                    <label><strong>Faça um breve resumo de duas experiências
+                                            profissionais:</strong></label>
+                                    <br>
+                                    <textarea row="8"  id="experiencia"></textarea>
+                                </div>
+
+                                <br>
+
+                                <button class="botao" type="submit">Enviar</button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                        <div class="azul-claro" id="clientes">
+                            <div class="clientes">
+                                <h1>NOSSOS CLIENTES</h1>
+                            </div>
+                            <div class="clientes-logo">
+                                <img src="clientes/cliente1.png" />
+                                <img src="clientes/cliente2.png" />
+                                <img src="clientes/cliente3.png" />
+                                <img src="clientes/cliente4.png" />
+                                <img src="clientes/cliente5.png" />
+                                <img src="clientes/cliente6.png" />
+                                <img src="clientes/cliente7.png" />
+                                <img src="clientes/cliente8.png" />
+                                <img src="clientes/cliente9.png" />
+                                <img src="clientes/cliente10.png" />
+                                <img src="clientes/cliente11.png" />
+                                <img src="clientes/cliente12.png" />
+                                <img src="clientes/cliente13.png" />
+                                <img src="clientes/cliente14.png" />
+                                <img src="clientes/cliente15.png" />
+                                <img src="clientes/cliente16.png" />
+                            </div>
+
+                        </div>
+                        <div class="azul" id="faq">
+                            <div class="faq">
+                                <h1>Perguntas frequentes</h1>
+                                <ul>
+                                    <li>
+                                        <b>É permitido a permanência de animais nos locais?</b>
+                                        <br><br>
+                                        <p>Todas as hospedagens da nossa plataforma permite a presença de animais.</p>
+                                    </li>
+                                    <li>
+                                        <b>Existem taxas fora do valor da hospedagem?</b>
+                                        <br><br>
+                                        <p>Será feita uma vistoria antes e depois da estadia para verificar se segue
+                                            tudo nos
+                                            conformes, estando tudo em perfeito estado não haverá taxas.</p>
+                                    </li>
+                                    <li>
+                                        <b>A partir de qual horário posso me acomodar no imóvel?</b>
+                                        <br><br>
+                                        <p>Todos os check-ins são feitos a partir de 12:00 na data escolhida.</p>
+                                    </li>
+                                    <li>
+                                        <b>Como é feito a forma de pagamento?</b>
+                                        <br><br>
+                                        <p>Temos o modelo de diária e mensal, aceitamos PIX, boleto bancário e cartão de
+                                            crédito.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="rodape">
+                <div class="contato">
+                    Contato: <br><br>
+                    (11) 99876-5432 <br>
+                    (11) 91234-5678 <br>
+                    f4life@gmail.com
+                </div>
+                <div class="endereco">
+                    Endereço: <br><br>
+                    Rua Labenu, 321 <br>
+                    CEP - 12345-543 <br>
+                    Pinheiros - São Paulo
+                </div>
+                <div class="redes-icone">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
